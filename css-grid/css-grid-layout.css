@@ -24,7 +24,7 @@ body {
     padding: 0 60px;
 
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3rem 1rem;
     grid-template-areas:
         "header header"
         "main sidebar"
