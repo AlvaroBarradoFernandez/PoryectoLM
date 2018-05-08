@@ -15,7 +15,6 @@ body {
     font: normal 16px sans-serif;
 }
 
-/* Page Layout */
 
 .container{
     max-width: 900px;
@@ -32,7 +31,6 @@ body {
     
 }
 
-/* Header */
 
 header{
     grid-area: header;
@@ -45,13 +43,21 @@ header{
 header nav {
     justify-self: start;
     list-style: none;
+    display: inline-block;
 
 }
+
 
 header nav li {
     margin-right: 15px;
     display: inline-block;
 }
+
+
+/*No me acordaba de como volver a poner es su orden correcto el boton de pagar
+y le puse float:right, pero como al ponerlo a la derecha se me ponia debajo de la
+linea del menu, le puse al header nav li un display:inline-block, para que solo ocupase,
+lo que ocupan las letras del nav*/
 
 header button {
     justify-self: end;
@@ -65,7 +71,6 @@ header button {
     float:right;
 }
 
-/* Main Section */
 
 .main {
 
@@ -87,7 +92,6 @@ header button {
 }
 
 
-/* Sidebar */
 
 .sidebar {
     border: 1px solid #a2a2a2;
@@ -95,7 +99,6 @@ header button {
     grid-area: sidebar;
 }
 
-/* Footer */
 
 footer {
     color: #ef5350;
@@ -114,7 +117,6 @@ footer p {
 
 @media (max-width: 600px) {
     .container{
-
         grid-template-columns: 1fr;
         grid-template-areas:
             "header"
